@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form validation in HTML & CSS | CodingNepal</title>
+  <link rel="stylesheet" href="DoctorLoginPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <video  autoplay muted loop id="myVideo">
+    <source src="Virus.mp4" type="video/mp4">
+  </video>
+
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">Apollo Health Care</a>
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="MainPg.html" class="nav_link">Home</a>
+                <div class="dropdown">
+                  <button class="btn">Services</button>
+                  <div class="dropdown-menu">
+                  <a href="#">Government Schemes</a>
+                  <a href="#">Medical Camps</a>
+                  </div>
+                  </div>
+                <a href="BookApp.html" class="nav_link">Book Appointment</a>
+                <a href="ContactUs.html" class="nav_link">Contact Us</a>
+                <a href="AboutUs.html" class="nav_link">About Us</a>
+                <a href="CareNow.html" class="nav_link">Get Care Now</a>
+                <div class="dropdown">
+                  <button class="btn">Gallery</button>
+                  <div class="dropdown-menu">
+                  <a href="#">Hospital Premises</a>
+                  <a href="#">Achivements </a>
+                  <a href="#">Programs</a>
+                  </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn">Register</button>
+                    <div class="dropdown-menu">
+                    <a href="DoctorLoginPage.html">Doctors </a>
+                    <a href="PatientsLogin.html">Patients </a>
+                    <a href="RegistraionPage.html">Visitors</a>
+                    </div>
+                    </div>
+                  <a href="RegistraionPage.html" class="nav_link">Register</a>
+                
+
+            </li>
+        </ul>
+    </nav>
+</header>
+
+  
+
+
+
+
+
+  <div  class="wrapper">
+    <header>Doctor Login Form</header>
+    <form action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <script src="DoctorLoginPage.js"></script>
+
+</body>
+</html>

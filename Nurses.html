@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="Facilities.css" />
+
+</head>
+<body>
+
+
+
+    <header class="header">
+        <nav class="nav">
+          <a href="#" class="nav_logo">Apollo Health Care</a>
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="MainPg.html" class="nav_link">Home</a>
+                    <div class="dropdown">
+                      <button class="btn">Services</button>
+                      <div class="dropdown-menu">
+                      <a href="#">Government Schemes</a>
+                      <a href="#">Medical Camps</a>
+                      <a href="BookApp.html">Book Appointment</a>
+      
+                      </div>
+                      </div>
+                    <a href="ContactUs.html" class="nav_link">Contact Us</a>
+                    <a href="AboutUs.html" class="nav_link">About Us</a>
+                    <a href="CareNow.html" class="nav_link">Get Care Now</a>
+                    <div class="dropdown">
+                      <button class="btn">Gallery</button>
+                      <div class="dropdown-menu">
+                      <a href="#">Hospital Premises</a>
+                      <a href="#">Achivements </a>
+                      <a href="#">Programs</a>
+                      </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn">Register</button>
+                        <div class="dropdown-menu">
+                        <a href="DoctorLoginPage.html">Doctors </a>
+                        <a href="PatientsLogin.html">Patients </a>
+                        <a href="RegistraionPage.html">Visitors</a>
+                        </div>
+                        </div>
+                      <a href="RegistraionPage.html" class="nav_link">Register</a>
+                    
+      
+                </li>
+            </ul>
+        </nav>
+      </header>
+      
+      
+      
+
+
+
+    <div class="imageContainer" id="imageContainer"></div>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+
+
+
+    <script>
+        const imageContainer = document.getElementById('imageContainer');
+        
+        const imageCount = 28; // Number of images
+        const imageFileNames = [];
+        for (let i = 1; i <= imageCount; i++) {
+            imageFileNames.push(`Nurses${i}.jpg`);
+        }
+
+        function insertImages() {
+            for (const fileName of imageFileNames) {
+                const imgElement = document.createElement('img');
+                imgElement.classList.add('gallery__image'); // Add the class for hover effect
+
+                imgElement.src = `./Gallery/nurces/${fileName}`; 
+                imgElement.alt = fileName; 
+                imageContainer.appendChild(imgElement);
+            }
+        }
+
+        // Call the function to insert images when the page loads
+        window.onload = insertImages;
+    </script>
+</body>
+</html>

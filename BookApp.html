@@ -1,0 +1,279 @@
+<html>
+<head>
+
+<title>Book Appointment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="BookApp.css">
+<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body>
+  <div class="bg-img" ></div>
+  
+<div>
+ 
+<br>
+<hr >
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="nav_logo">Apollo Health Care</a>
+      <ul class="nav_items">
+          <li class="nav_item">
+              <a href="MainPg.html" class="nav_link">Home</a>
+              <a href="RegistraionPage.html" class="nav_link">Register</a>
+              <a href="#Services" class="nav_link">Servies</a>
+              <a href="BookApp.html" class="nav_link">Book Appointment</a>
+              <a href="ContactUs.html" class="nav_link">Contact Us</a>
+              <a href="#Aboutus" class="nav_link">About Us</a>
+              <a href="CareNow.html" class="nav_link">Get Care Now</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+
+
+
+<div class="container" onsubmit="bookapp()">
+    <div class="title">Book Appointment</div>
+    <div class="content">
+      <form action="#">
+        <br>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Other</span>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+
+              
+
+            <span class="details" style="padding-top: 10%;">Select Country</span>
+            <div class="select">
+            <select name="Country" id="Country" onchange="country()" required>
+                <option ><span class="details">Country</span></option>
+                <option value="India">India</option>
+                <option value="International">International</option>
+                
+            </select>
+            </div>
+
+            
+            
+
+            <span class="details" style="padding-top: 10%;" >Select City</span>
+            <div class="select" id="IndCity">
+                <select name="City" id="City">
+                    <option selected disabled><span class="details">City</span></option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Thane">Thane</option>
+                </select>
+
+
+
+                </div>
+                <div class="select" id="intercity" style="display: none;">
+                  <select  name="City" id="City">
+                      <option selected disabled><span class="details">City</span></option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Cannes">Cannes</option>
+                      <option value="Boston">Boston</option>
+                      <option value="Naples">Naples</option>
+                      <option value="Venice">Venice</option>
+                      <option value="Prague">Prague</option>
+                      <option value="San Diego">San Diego</option>
+                      <option value="Zurich">Zurich</option>
+                      <option value="Marselle">Marselle</option>
+                      <option value="Phuket">Phuket</option>
+                  </select>
+                  </div>
+                <span class="details" style="padding-top: 10%;">Select Specialist</span>
+            <div class="select">
+            <select name="Specialist" id="Specialist">
+                <option selected disabled ><span class="details">Speciality</span></option>
+                <option value="Neurosurgeon">Neurosurgeon</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="General Physican">General Physican</option>
+                <option value="obstetrics">obstetrics & Gynaecology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Urology">Urology</option>
+            </select>
+            </div>
+            
+            <br>
+            <br>
+            <br>            
+          <div class="date1">
+            <span class="details" style="padding-top: 10%;">Select Date for Appointment</span><br>
+            <input id="today" type="date">
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <span class="details" style=" padding-top: 10%; ;">Select Time for Appointment</span><br>
+            <input type="time" value="13:00" step="900">
+            </div>
+
+             <script>
+              let today = new Date().toISOString().substr(0, 10);
+              document.querySelector("#today").value = today;
+              document.querySelector("#today2").valueAsDate = new Date();
+
+              function country()
+              {
+                var x = document.getElementById("Country").value;
+                if(x == "India"){
+                  intercity.style.display = "none";
+                  IndCity.style.display="flex"
+                  intercity.value = "International";
+
+                }
+                else{
+                  IndCity.style.display = "none";
+                  intercity.style.display = "flex";
+                  IndCity.value = "India";
+                }
+              
+
+                  
+                
+              }
+
+              function bookapp(){
+                alert("Appointment Confirmed")
+              }
+             </script>   
+        </div>
+      </div>
+      
+        <div class="button1" >
+          <input  type="submit" value="Book Appointment" required>
+      </form>
+    </div>
+  </div>
+  
+  
+
+  
+<footer class="Foot">
+  <ul>
+    <li>
+  <form  onsubmit="sbtbt()">
+    <div class="area">
+      <h1  class="FootText"> Subscribe Our Newsletter</hi>
+        <br>
+        <br>
+    <input class="emailbox" id="mailsub" type="email"placeholder="Enter Email" required>
+    <br>
+    <button class="bt1" ><p1 class="FootText" style="font-size: 26px;">Submit</p1></iutton>
+  </div>
+  </form>
+  </li>
+  <li>
+  <div class="area">
+    <h1 class="FootText">Contact Us</h1>
+    <p1 class="FootText" style="text-align: left;"> Emergency</p1>
+    <a href="tel:8879679671" class="FootNum">100</a>
+    <p1 class="FootText" > Apollo Lifeline International
+    </p1>
+    <a href="tel:8879679671" class="FootNum">2342300</a>
+    <p1 class="FootText" style="text-align: left;"> Health Help Line
+    </p1>
+    <a href="tel:8879679671" class="FootNum">12342300</a>
+  </div>
+  </li>
+
+  <li>
+    <h1 class="FootText"> Social Media</h1>
+
+    <div class="area1">
+      <br>
+    <i href="#" class=" fa fa-solid fa-3x  fa-facebook"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-twitter"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-google"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-linkedin"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-youtube"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-instagram"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-pinterest"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-snapchat-ghost"></i>
+    <i href="#" class=" fa fa-solid fa-3x  fa-github"></i>
+      </div>
+
+  </li>
+
+<li>
+  <div class="area1">
+  <h1 class="FootText">News & Media</h1>
+  <ul  >
+    <li class="FootText" style="list-style-type: none;">News</li>
+    <li class="FootText" style="list-style-type: none;">Events </li>
+    <li class="FootText" style="list-style-type: none;">Interivews </li>
+    <li class="FootText" style="list-style-type: none;">Media contacts </li>
+    <li class="FootText" style="list-style-type: none;">Hospitals Reviews</li>
+    
+  </ul>
+  </div>
+</li>
+
+  </ul>
+</footer>
+
+  
+</body>
+</html>

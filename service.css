@@ -1,0 +1,319 @@
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  body::-webkit-scrollbar-track{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  
+      }
+          ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);    
+  
+  
+  }
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  }
+  
+  
+  
+  
+  .nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 10;
+    
+  }
+  .textsec
+  {
+    color: #f1f1f1!important;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0,.5);
+    position: relative;
+    top: 225px;
+    left: 205px;
+    font-family: "Segoe UI",Arial,sans-serif;
+  
+    font-size: 150px;
+    font-weight: 400;
+    padding: 8px 16px!important;
+  
+    text-align: center!important;
+  }
+  .TextArea{
+  position: relative;
+  top: 105px;
+  left: 205px;
+  border-radius: 100px;
+  font-size: 150px;
+  font-family: "Segoe UI",Arial,sans-serif;
+      font-weight: 400;
+  color: #fff!important;
+  background-color: #000!important;
+  padding: 8px 16px!important;
+  text-align: center!important;
+  
+  }
+  
+  .bg-image {
+    background-image: url("HospitalArea.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  
+  
+  .nav,
+  .nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav_logo,
+  .nav_link,
+  .bttonArea {
+    color: #fff;
+  }
+  .nav_logo {
+    font-size: 25px;
+  }
+  .nav_item {
+    column-gap: 25px;
+  }
+  .nav_link:hover {
+    color: #fff8f8;
+  }
+      
+  .header {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    background-color: #0b0217;
+    padding: 0 0;
+  }
+      
+      
+  .transbox {      
+    margin: 30px;
+    background-color: #c2c2c2;
+    opacity: 0.8;
+  }  
+  
+  .centered {
+    position: fixed;
+    top: 383px;
+    left: 644px;
+    transform: translate(-50%, -50%);
+  }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  
+  
+  .bttonArea {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000000;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #2c2b2b;
+    }
+  
+    .wrapper
+    {
+      float: right;
+  
+    }
+
+   
+.container {
+    padding: 2em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+  
+   .bttonArea {
+    color: rgb(250, 250, 250); 
+    border: 2px solid linear-gradient(to right, #00b4db, #0083b0);
+    background-color: rgb(226, 195, 255);
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 25px;
+    
+  }
+
+  .text12{
+
+    position: relative;
+    top: -10px;
+    left: -15px;
+    font-size: large;
+    text-align: center;
+  }
+
+   .bttonArea span {
+   
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .bttonArea span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+  
+  .bttonArea:hover{
+    padding-bottom: 45px;
+
+    background-image: linear-gradient(to right, #00b4db, #0083b0);  }
+  
+  .bttonArea:hover span:after {
+    opacity: 1;
+    right: 0;
+ 
+}
+
+.whyus1{
+    background-size: cover;
+    background-position: center;
+
+    height: auto;
+    width: 90%;
+    z-index: 100;
+    padding: 0 59;
+    background-color: #a0d2eb;
+  
+  }
+
+
+  .imgs{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .Foot{
+    background-color: #000000;
+    padding: 10 10 10 10;
+    display: grid;
+    grid-gap: 2em;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    position:absolute;
+    left:0;
+  }
+  
+  
+  .FootText{
+    color: white;
+    padding: 10 10 10 10;
+    position: relative;
+  
+  }
+  
+  
+  .emailbox{
+    padding: 10 10 10 40;
+    height: 50px;
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 100px;
+  }
+  .bt1{
+    height: 40px;
+    width :300px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    
+    position: relative;
+    left: -500px;
+    top: 50px;
+  }
+  .bt1:hover{
+    transform:scale(1.05);
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  }
+  
+  
+  .FootNum{
+    color: rgb(0, 187, 255);
+    padding: 10 10 10 10;
+    position: relative;
+  }
+  .up-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn {
+    display: none;
+    
+  }
+  
