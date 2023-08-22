@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+html { overflow-y: scroll; }
 
 #myVideo {
   position: fixed;
@@ -29,6 +29,9 @@ body{
   background: #d43f8d;
 }
 
+a {
+  text-decoration: none;
+}
 
 .nav {
   max-width: 90%;
@@ -47,12 +50,14 @@ body{
 .nav_link,
 .button {
   color: #fff;
+  font-weight: bolder;
+  font-size: 1vw;
 }
 .nav_logo {
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 .nav_item {
-  column-gap: 25px;
+  column-gap: 2px;
 }
 .nav_link:hover {
   color: #d9d9d9;
@@ -62,12 +67,11 @@ body{
   position: fixed;
   top:0px;
   left: 0px;
-  height: 80px;
+  height: 50px;
   width: 100%;
   z-index: 100;
   background-color: #0b0217;
 }
-
 
 
 .transbox {      
@@ -123,7 +127,6 @@ body{
    
 
 
-
    .dropdown {
     float: left;
     overflow: hidden;
@@ -131,7 +134,7 @@ body{
   
   
   .dropdown .btn {
-    font-size: 16px;  
+    font-size: 1.2vw;  
     border: none;
     outline: none;
     color: white;
@@ -139,6 +142,7 @@ body{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    font-weight: bolder;
   }
   
   .navbar a:hover, .dropdown:hover .btn {
@@ -171,10 +175,12 @@ body{
   .dropdown:hover .dropdown-menu {
     display: block;
   }
-
-
+  
 .container{
+  position: relative;
+  top: 100px;
   width: 330px;
+  margin-bottom: 100px;
   background: #080808;
   text-align: center;
   border-radius: 5px;
@@ -393,4 +399,172 @@ form .page .btns button.next{
 }
 .time:hover::after {
   color: #23b499;
+}
+
+
+.Foot{
+  background-color: #000000;
+  padding: 10 10 10 10;
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  position:absolute;
+  bottom: 0px;
+  left:0;
+}
+
+
+.FootText{
+  font-size: 1vw;
+  text-align: left;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.emailbox{
+  padding: 10 10 10 40;
+  height: 3vw;
+  width: 16vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1vw;
+  border-radius: 100px;
+}
+.bt1{
+  height: fit-content;
+  width :fit-content;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+  position: relative;
+  top: 10px;  
+}
+.bt1:hover{
+  transform:scale(1.05);
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+}
+
+
+.FootNum{
+  color: rgb(0, 187, 255);
+  align-items: left;
+  text-align: left;
+}
+.up-arrow{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  height: 50px;
+  font-size: 2vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn {
+  display: none;
+  
+}
+
+
+.area{
+  display: grid;
+  padding-right: 1vw;
+  width: fit-content;
+
+}
+
+.area1{
+  display:block;
+  width: 20vw;
+  padding: 10 10 10 10;
+}
+
+
+.inner{
+  padding-left: 1vw;
+}
+
+.areaContact{
+  display:block;
+  width: 20vw;
+  padding: 10 10 10 10;
+
+}
+
+
+.fa {
+  padding: 2vw;
+  font-size: 1vw;
+  width: 0.5vw;
+  height: 0.5vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: rgb(11, 11, 11);
+}
+
+.fa-github {
+  background: #fffefe;
+  color: rgb(0, 0, 0);
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.nlst{
+  list-style-type: none;
+}
+
+li.b{
+  list-style-type: lower-alpha;
+
+}
+
+.NewsAmedia{
+  color: rgb(250, 250, 250);
+  list-style-type: none; 
+  text-align: left;
 }
