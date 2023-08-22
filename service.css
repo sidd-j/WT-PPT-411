@@ -1,7 +1,7 @@
 
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
   body::-webkit-scrollbar-track{
     background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
@@ -220,8 +220,7 @@
     }
   
   .bttonArea:hover{
-    padding-bottom: 45px;
-
+    transform: scale(1.2);
     background-image: linear-gradient(to right, #00b4db, #0083b0);  }
   
   .bttonArea:hover span:after {
